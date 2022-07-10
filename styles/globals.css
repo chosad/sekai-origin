@@ -1,0 +1,286 @@
+@font-face {
+  font-family: 'Kallisto';
+  src: url('../public/Font/kallisto_medium-webfont.woff2') format('woff2'),
+       url('../public/Font/kallisto_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Kallisto;
+  src: url(../public/font/kallisto_medium-webfont.woff2);
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h6 {
+  margin: 0
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-header {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.text-sekai-origin {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 144px;
+  text-align: center;
+  color: #FFFFFF;
+  /* filter: blur(1px); */
+  margin-bottom: 20px;
+}
+
+.desc-sekai-origin {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.text-enter-the-world {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #4A3D3A;
+  width: 450px;
+}
+
+.desc-enter-the-world {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #4A3D3A;
+  width: 744px;
+}
+
+.enter-world-container {
+  background-image: url(../public/background2.png);
+  background-size: cover;
+  background-color: #EFEAE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:15px;
+  width: 100vw;
+}
+
+.grid-scroll {
+  display: inline-block;
+}
+
+.wrapper { 
+  margin: auto; 
+  text-align: center; 
+  position: relative;
+}
+.scrolls { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+}
+
+.text-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #4A3D3A;
+  margin-bottom: 20px;
+}
+
+.desc-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #4A3D3A;
+  width: 817px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.text-card-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #4A3D3A;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.desc-card-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  color: #4A3D3A;
+  margin-top: 0px;
+}
+
+.text-faq {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #4A3D3A;
+  margin-bottom: 0px;
+}
+
+.accordion-sekai {
+  width: 1090px;
+  background-color: #4A3D3A;
+  border-radius: 20px !important;
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.text-roadmap {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: center;
+  color: #4A3D3A;
+  margin-top: 350px;
+  margin-bottom: 160px;
+}
+
+.text-card-roadmap {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.desc-card-roadmap {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.text-token-distribution {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: center;
+  color: #4A3D3A;
+}
+
+.background-image-default {
+  background-image: url(../public/background2.png);
+  background-size: contain;
+  background-color: #EFEAE9;
+}
+
+.community-container {
+  background-image: url(../public/background4.png);
+  background-size: cover;
+  /* background-color: #EFEAE9; */
+}
+
+.text-join-community {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+
+.text-chart {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #4A3D3A;
+}
+
+.custom-tooltip {
+  background-color: #4A3D3A;
+  opacity: 0.9;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  z-index: 9;
+  /* position: relative; */
+}
+
+.text-custom-tooltip {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
