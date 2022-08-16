@@ -34,6 +34,30 @@ h6 {
   cursor: pointer;
 }
 
+.mt-70 {
+  margin-top: 70;
+}
+
+.mt-50 {
+  margin-top: 50;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .text-header {
   font-family: 'Kallisto';
   font-style: normal;
@@ -45,7 +69,50 @@ h6 {
   margin: 0;
 }
 
-.text-sekai-origin {
+.text-header-mobile {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: grey;
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 1); */
+  margin: 0;
+}
+
+.container-sekai-origin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -690px;
+  height: 690px;
+}
+
+.container-sekai-origin-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -565px;
+  height: 690px;
+}
+
+.container-sekai-origin .container-text-sekai {
+  position: relative;
+  top: -550px;
+  z-index: 3;
+  text-align: center;
+}
+
+.container-sekai-origin-mobile .container-text-sekai {
+  position: relative;
+  top: -400px;
+  z-index: 3;
+  text-align: center;
+}
+
+.container-sekai-origin .text-sekai-origin {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 700;
@@ -57,7 +124,18 @@ h6 {
   margin-bottom: 20px;
 }
 
-.desc-sekai-origin {
+.container-sekai-origin-mobile .text-sekai-origin {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.container-sekai-origin .desc-sekai-origin {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 400;
@@ -66,9 +144,38 @@ h6 {
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  max-width: 600px;
+  margin: auto;
 }
 
-.text-enter-the-world {
+.container-sekai-origin-mobile .desc-sekai-origin {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  width: 80%;
+  margin: auto;
+}
+
+.container-middle-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-middle-text-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-middle-text .text-enter-the-world {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 900;
@@ -79,7 +186,18 @@ h6 {
   width: 450px;
 }
 
-.desc-enter-the-world {
+.container-middle-text-mobile .text-enter-the-world {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #4A3D3A;
+  width: 250px;
+}
+
+.container-middle-text .desc-enter-the-world {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 500;
@@ -87,8 +205,43 @@ h6 {
   line-height: 24px;
   text-align: center;
   color: #4A3D3A;
-  width: 744px;
+  max-width: 744px;
+  padding: 20px;
 }
+
+.container-middle-text-mobile .desc-enter-the-world {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #4A3D3A;
+  max-width: 744px;
+  padding: 20px;
+  /* width: 265px; */
+}
+
+.container-video {
+  height: 730px;
+}
+
+.container-video-mobile {
+  height: 400px;
+}
+
+.container-video .icon-play {
+  position: relative;
+  top: -400px;
+  text-align: center;
+}
+
+.container-video-mobile .icon-play {
+  position: relative;
+  top: -230px;
+  text-align: center;
+}
+
 
 .enter-world-container {
   background-image: url(../public/background2.png);
@@ -124,6 +277,18 @@ h6 {
   white-space:nowrap;
 }
 
+.container-sekai-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-sekai-team.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .text-sekai-team {
   font-family: 'Kallisto';
   font-style: normal;
@@ -143,12 +308,28 @@ h6 {
   line-height: 24px;
   text-align: center;
   color: #4A3D3A;
-  width: 817px;
+  max-width: 817px;
+  padding: 20px;
   text-align: center;
   margin-bottom: 90px;
+  width: 100vw;
 }
 
-.text-card-sekai-team {
+.container-card-sekai-team {
+  width: 306px;
+  height: 415px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+
+.container-card-sekai-team-mobile {
+  width: 206px;
+  height: 265px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+
+.container-card-sekai-team .text-card-sekai-team {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 700;
@@ -159,12 +340,33 @@ h6 {
   margin-top: 10px;
 }
 
-.desc-card-sekai-team {
+.container-card-sekai-team-mobile .text-card-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4A3D3A;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.container-card-sekai-team .desc-card-sekai-team {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 30px;
+  color: #4A3D3A;
+  margin-top: 0px;
+}
+
+.container-card-sekai-team-mobile .desc-card-sekai-team {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
   color: #4A3D3A;
   margin-top: 0px;
 }
@@ -181,7 +383,7 @@ h6 {
 }
 
 .accordion-sekai {
-  width: 1090px;
+  width: 80%;
   background-color: #4A3D3A;
   border-radius: 20px !important;
   font-family: 'Kallisto';
@@ -192,7 +394,21 @@ h6 {
   color: #FFFFFF;
 }
 
-.text-roadmap {
+.container-roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1200px;
+}
+
+.container-roadmap.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+
+.container-roadmap .text-roadmap {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 700;
@@ -204,7 +420,45 @@ h6 {
   margin-bottom: 160px;
 }
 
-.text-card-roadmap {
+.container-roadmap-mobile .text-roadmap {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  color: #4A3D3A;
+  margin-top: 250px;
+  margin-bottom: 160px;
+}
+
+.container-roadmap .container-card-roadmap {
+    background-color: #4A3D3A;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 732px;
+    height: 409px;
+    color: white;
+    position: relative;
+    top: -250px;
+    left: -150px;
+}
+
+.container-roadmap-mobile .container-card-roadmap {
+    background-color: #4A3D3A;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    height: 209px;
+    color: white;
+    position: relative;
+    top: -120px;
+    left: 20px;
+}
+
+.container-roadmap .text-card-roadmap {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -214,7 +468,17 @@ h6 {
   margin-bottom: 0px;
 }
 
-.desc-card-roadmap {
+.container-roadmap-mobile .text-card-roadmap {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.container-roadmap .desc-card-roadmap {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -223,12 +487,43 @@ h6 {
   color: #FFFFFF;
 }
 
-.text-token-distribution {
+.container-roadmap-mobile .desc-card-roadmap {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.container-token-distribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-token-distribution-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-token-distribution .text-token-distribution {
   font-family: 'Kallisto';
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
   line-height: 84px;
+  text-align: center;
+  color: #4A3D3A;
+}
+
+.container-token-distribution-mobile .text-token-distribution {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
   text-align: center;
   color: #4A3D3A;
 }
@@ -243,17 +538,6 @@ h6 {
   background-image: url(../public/background4.png);
   background-size: cover;
   /* background-color: #EFEAE9; */
-}
-
-.text-join-community {
-  font-family: 'Kallisto';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 72px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-left: 50px;
 }
 
 .text-chart {
@@ -273,7 +557,6 @@ h6 {
   color: white;
   padding: 20px;
   z-index: 9;
-  /* position: relative; */
 }
 
 .text-custom-tooltip {
@@ -283,4 +566,64 @@ h6 {
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
+  width: 500px;
+}
+
+.text-custom-tooltip-mobile {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 400px;
+}
+
+.container-join-community {
+  height: 770px;
+}
+
+.container-join-community-mobile {
+  height: 570px;
+}
+
+.container-join-community .container-image-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 700px;
+}
+
+.container-join-community-mobile .container-image-text {
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-evenly; */
+  display: flex;
+  flex-direction: column-reverse;
+  height: 500px;
+}
+
+.container-join-community .text-join-community {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+
+.container-join-community-mobile .text-join-community {
+  font-family: 'Kallisto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 5;
+  top: -50px
+  /* margin-left: 50px; */
 }

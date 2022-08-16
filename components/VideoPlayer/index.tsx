@@ -1,19 +1,33 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface VideoPlayerProps {
     width: number,
 }
 const VideoPlayer = (props: VideoPlayerProps) => {
   const { width } = props;
+  const isDesktop = useMediaQuery({ minWidth: 769 });
+
+  const [state, setState] = useState({
+    classContainer: '',
+    heightImage: 0,
+    iconPlaySize: 0,
+  });
+
+  useEffect(() => {
+    if (isDesktop) {
+      setState({ classContainer: 'container-video', iconPlaySize: 90, heightImage: 730 });
+    } else {
+      setState({ classContainer: 'container-video-mobile', iconPlaySize: 70, heightImage: 400 });
+    }
+  }, [isDesktop]);
+
   return (
-    <div style={{ height: 730 }}>
-      <Image src="/video.png" alt="" width={width} height={730} />
-      <div style={{
-        position: 'relative', top: -400, left: width / 2 - 40, width: 90,
-      }}
-      >
-        <Image src="/Play.png" alt="" width={90} height={90} />
+    <div className={state.classContainer}>
+      <Image src="/video.png" alt="" width={width} height={state.heightImage} />
+      <div className="icon-play">
+        <Image src="/Play.png" alt="" width={state.iconPlaySize} height={state.iconPlaySize} />
       </div>
     </div>
   );
